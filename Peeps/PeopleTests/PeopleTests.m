@@ -21,10 +21,12 @@
 }
 
 - (void)testFactoryMethod {
-    Person *p = [Person personWithFirstName:@"Fred" lastName:@"Smith" age:42];
-    NSLog(@"%@", p);
+    Person *person = [Person personWithFirstName:@"Fred" lastName:@"Smith" age:42];
+    NSLog(@"%@", person);
     
-    XCTAssertEqualObjects([p fullName], @"Fred Smith");
+    person.dog = [[Dog alloc] init];
+    
+    XCTAssertEqualObjects(person.fullName, @"Fred Smith");
 }
 
 - (void)testBarkLikeADog {

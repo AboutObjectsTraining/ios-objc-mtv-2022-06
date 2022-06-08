@@ -43,52 +43,24 @@
     if ([super respondsToSelector:aSelector]) {
         return YES;
     }
-    return [[self dog] respondsToSelector:aSelector];
+    return [self.dog respondsToSelector:aSelector];
 }
 
 - (id)forwardingTargetForSelector:(SEL)aSelector {
-    if ([[self dog] respondsToSelector:aSelector]) {
-        return [self dog];
+    if ([self.dog respondsToSelector:aSelector]) {
+        return self.dog;
     }
     return [super forwardingTargetForSelector:aSelector];
 }
 
-- (NSString *)firstName {
-    return _firstName;
-}
-- (void)setFirstName:(NSString *)newValue {
-    _firstName = [newValue copy];
-}
-
-- (NSString *)lastName {
-    return _lastName;
-}
-- (void)setLastName:(NSString *)newValue {
-    _lastName = [newValue copy];
-}
-
 - (NSString *)fullName {
-    return [NSString stringWithFormat:@"%@ %@", [self firstName], [self lastName]];
-}
-
-- (NSInteger)age {
-    return _age;
-}
-- (void)setAge:(NSInteger)newValue {
-    _age = newValue;
-}
-
-- (Dog *)dog {
-    return _dog;
-}
-- (void)setDog:(Dog *)newValue {
-    _dog = newValue;
+    return [NSString stringWithFormat:@"%@ %@", self.firstName, self.lastName];
 }
 
 - (NSString *)description {
     return [[NSString alloc] initWithFormat:
             @"%@ %@, age: %@",
-            [self firstName], [self lastName], @([self age])];
+            self.firstName, self.lastName, @(self.age)];
 }
 
 @end
