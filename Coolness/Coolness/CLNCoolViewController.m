@@ -48,8 +48,8 @@
     
     self.contentView.clipsToBounds = YES;
     
-    accessoryView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.7];
-    self.contentView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.5];
+    accessoryView.backgroundColor = [UIColor colorNamed:@"Accessory Color"];
+    self.contentView.backgroundColor = [UIColor colorNamed:@"Content Color"];
     
     // Controls
     
