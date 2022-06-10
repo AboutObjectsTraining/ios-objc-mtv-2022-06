@@ -27,53 +27,54 @@
         <scene sceneID="Veq-wX-QT9">
             <objects>
                 <tableViewController id="NUD-Jx-epZ" customClass="RELReadingListController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="gEV-lp-Co6">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="gEV-lp-Co6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <sections>
-                            <tableViewSection id="GAg-dh-rdS">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="2dJ-Jj-C6w" detailTextLabel="OK9-mk-srN" style="IBUITableViewCellStyleSubtitle" id="oeq-1Q-HYA">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oeq-1Q-HYA" id="ju2-UH-43A">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Book Cell" textLabel="2dJ-Jj-C6w" detailTextLabel="OK9-mk-srN" style="IBUITableViewCellStyleSubtitle" id="oeq-1Q-HYA">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oeq-1Q-HYA" id="ju2-UH-43A">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="The Tempest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2dJ-Jj-C6w">
+                                            <rect key="frame" x="20" y="10.5" width="93" height="18"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2dJ-Jj-C6w">
-                                                    <rect key="frame" x="20" y="10.5" width="31.5" height="18"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OK9-mk-srN">
-                                                    <rect key="frame" x="20" y="31" width="47" height="16"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="lRc-fd-FPD" kind="show" id="Jjg-B5-m3f"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="2012 William Shakespeare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OK9-mk-srN">
+                                            <rect key="frame" x="20" y="31" width="158.5" height="16"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="lRc-fd-FPD" kind="show" id="Jjg-B5-m3f"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="NUD-Jx-epZ" id="EtL-Qd-06o"/>
                             <outlet property="delegate" destination="NUD-Jx-epZ" id="fD6-0m-b1o"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Reading List" id="2RA-A6-l44"/>
+                    <connections>
+                        <outlet property="storeController" destination="lFe-mO-IpC" id="DLN-Nn-tqi"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xr1-56-12j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="lFe-mO-IpC" customClass="RLMStoreController"/>
             </objects>
-            <point key="canvasLocation" x="-207" y="31"/>
+            <point key="canvasLocation" x="-212" y="31"/>
         </scene>
         <!--View Book-->
         <scene sceneID="gL3-04-lpp">
@@ -200,15 +201,21 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="firstNameLabel" destination="EBv-Ix-TTG" id="G3X-XH-LdF"/>
+                        <outlet property="lastNameLabel" destination="Gtc-OH-pUO" id="nng-KH-MVg"/>
+                        <outlet property="titleLabel" destination="Zbs-r0-8p6" id="Yos-rF-w9v"/>
+                        <outlet property="yearLabel" destination="mrD-Mk-vt2" id="dv4-7Q-Otp"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bG9-sb-Go9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="597" y="31"/>
+            <point key="canvasLocation" x="603" y="31"/>
         </scene>
         <!--Edit Book-->
         <scene sceneID="84n-bj-tgi">
             <objects>
-                <tableViewController id="8h5-Xx-17u" sceneMemberID="viewController">
+                <tableViewController id="8h5-Xx-17u" customClass="RELEditBookController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="none" rowHeight="72" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="uTa-BN-Gna">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -372,15 +379,21 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="8ZD-1P-yv9">
                             <connections>
-                                <segue destination="agw-cO-Xep" kind="unwind" unwindAction="done:" id="16g-D4-pcg"/>
+                                <segue destination="agw-cO-Xep" kind="unwind" identifier="Done" unwindAction="done:" id="16g-D4-pcg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="firstNameField" destination="iPH-u5-3YW" id="Izz-c6-yIn"/>
+                        <outlet property="lastNameField" destination="w3q-vG-r5T" id="k4M-im-IhW"/>
+                        <outlet property="titleField" destination="lmC-PH-rzi" id="OLc-KO-RFV"/>
+                        <outlet property="yearField" destination="oUl-KQ-ANG" id="mZs-cP-MMc"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V0u-S9-J8Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="agw-cO-Xep" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2328" y="31"/>
+            <point key="canvasLocation" x="2339" y="31"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cbe-1W-mzx">
