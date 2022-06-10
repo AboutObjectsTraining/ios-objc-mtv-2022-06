@@ -5,6 +5,8 @@
 
 @class RLMBook;
 
-@interface RELReadingListController : UITableViewController
+@interface RELAddBookController : UITableViewController
+
+@property (strong, nonatomic) void (^addBook)(RLMBook *book);
 
 @end

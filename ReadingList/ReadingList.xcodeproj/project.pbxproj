@@ -34,6 +34,9 @@
 		B4DDAD992853DF2400CBB206 /* NSArray+RLMObjectMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = B4DDAD8B2853DF2300CBB206 /* NSArray+RLMObjectMapping.h */; };
 		B4DDAD9A2853DF2400CBB206 /* ReadingList.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4DDAD8C2853DF2400CBB206 /* ReadingList.plist */; };
 		B4DDAD9D2853ED1500CBB206 /* RELEditBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DDAD9C2853ED1500CBB206 /* RELEditBookController.m */; };
+		B4DDADA02853FA8900CBB206 /* ViewAndEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4DDAD9E2853FA8900CBB206 /* ViewAndEdit.storyboard */; };
+		B4DDADA32853FBE500CBB206 /* RELAddBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DDADA22853FBE500CBB206 /* RELAddBookController.m */; };
+		B4DDADA62854055600CBB206 /* AddBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4DDADA42854055600CBB206 /* AddBook.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +111,10 @@
 		B4DDAD8C2853DF2400CBB206 /* ReadingList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = ReadingList.plist; sourceTree = "<group>"; };
 		B4DDAD9B2853ED1500CBB206 /* RELEditBookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELEditBookController.h; sourceTree = "<group>"; };
 		B4DDAD9C2853ED1500CBB206 /* RELEditBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELEditBookController.m; sourceTree = "<group>"; };
+		B4DDAD9F2853FA8900CBB206 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ReadingList/Base.lproj/ViewAndEdit.storyboard; sourceTree = "<group>"; };
+		B4DDADA12853FBE500CBB206 /* RELAddBookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELAddBookController.h; sourceTree = "<group>"; };
+		B4DDADA22853FBE500CBB206 /* RELAddBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELAddBookController.m; sourceTree = "<group>"; };
+		B4DDADA52854055600CBB206 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ReadingList/Base.lproj/AddBook.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +147,8 @@
 		B4DDAD332853970300CBB206 = {
 			isa = PBXGroup;
 			children = (
+				B4DDADA42854055600CBB206 /* AddBook.storyboard */,
+				B4DDAD9E2853FA8900CBB206 /* ViewAndEdit.storyboard */,
 				B4DDAD3E2853970300CBB206 /* ReadingList */,
 				B4DDAD642853DE3000CBB206 /* ReadingListModel */,
 				B4DDAD702853DE3000CBB206 /* ReadingListModelTests */,
@@ -166,6 +175,8 @@
 				B4DDAD432853970300CBB206 /* RELSceneDelegate.m */,
 				B4DDAD582853BDA600CBB206 /* RELReadingListController.h */,
 				B4DDAD592853BDA600CBB206 /* RELReadingListController.m */,
+				B4DDADA12853FBE500CBB206 /* RELAddBookController.h */,
+				B4DDADA22853FBE500CBB206 /* RELAddBookController.m */,
 				B4DDAD5B2853BFCD00CBB206 /* RELViewBookController.h */,
 				B4DDAD5C2853BFCD00CBB206 /* RELViewBookController.m */,
 				B4DDAD9B2853ED1500CBB206 /* RELEditBookController.h */,
@@ -331,7 +342,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4DDAD4F2853970400CBB206 /* LaunchScreen.storyboard in Resources */,
+				B4DDADA02853FA8900CBB206 /* ViewAndEdit.storyboard in Resources */,
 				B4DDAD4C2853970400CBB206 /* Assets.xcassets in Resources */,
+				B4DDADA62854055600CBB206 /* AddBook.storyboard in Resources */,
 				B4DDAD4A2853970300CBB206 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,6 +377,7 @@
 				B4DDAD522853970400CBB206 /* main.m in Sources */,
 				B4DDAD5A2853BDA600CBB206 /* RELReadingListController.m in Sources */,
 				B4DDAD442853970300CBB206 /* RELSceneDelegate.m in Sources */,
+				B4DDADA32853FBE500CBB206 /* RELAddBookController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +437,22 @@
 				B4DDAD4E2853970400CBB206 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B4DDAD9E2853FA8900CBB206 /* ViewAndEdit.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4DDAD9F2853FA8900CBB206 /* Base */,
+			);
+			name = ViewAndEdit.storyboard;
+			sourceTree = "<group>";
+		};
+		B4DDADA42854055600CBB206 /* AddBook.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4DDADA52854055600CBB206 /* Base */,
+			);
+			name = AddBook.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
